@@ -4,6 +4,7 @@
 - Location: Bishkek, Kyrgyz Republic
 - Phone: +996 707 07-33-06
 - Email: mainazarov1@gmail.com
+- Discord: @Mainazarov1#4975
 - LinkedIn: [Mainazarov Islambek](https://www.linkedin.com/in/mainazarov1/)
 - GitHub: [@mainazarov1](https://github.com/mainazarov1)
 - Telegram: [@mainazarov1](https://t.me/mainazarov1)
