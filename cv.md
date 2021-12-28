@@ -26,17 +26,24 @@ I have good interpersonal skills, am an excellent team worker and very willing t
 
 ----
 ## CODE
+Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+
 ```
 const moveZeros = (arr) => {
   return arr.filter(x => x !== 0).concat(arr.filter(x => x === 0));
 }
 ```
+```
+moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
+```
+
 ----
 ## COURSES
 - Neolabs
+
 ----
 ## PROJECTS
-Not yet
+[Trans-Light](mainazarov1.github.io/trans-light/)
 
 ----
 ## EDUCATION
@@ -44,4 +51,4 @@ Kyrgyz National University
 
 ----
 ## ENGLISH
-- Elementary A1
+- Elementary (A1)
