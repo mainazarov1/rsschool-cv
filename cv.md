@@ -16,10 +16,13 @@ I have good interpersonal skills, am an excellent team worker and very willing t
 
 ----
 ## SKILLS
-- JavaScript
-- HTML
-- CSS
+- JavaScript (Fundamentals, ES6+, DOM, JSON, Asynchronous JavaScript)
+- HTML5
+- CSS3 (Bootstrap, SASS/SCSS, BEM)
+- SASS(SCSS)
+- Bootstrap, Tailwind CSS
 - Git/GitHub
+- Figma, Photoshop
 
 ----
 ## CODE
