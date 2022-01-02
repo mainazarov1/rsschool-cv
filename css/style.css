@@ -170,4 +170,32 @@ main {
   flex: 1 1 30%;
 }
 
+.projects ol {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects ol li {
+  flex: 0 0 45%;
+  margin-bottom: 1rem;
+}
+.projects ol li a {
+  color: var(--anthracite);
+  position: relative;
+}
+.projects ol li a:before {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  width: 100%;
+  background: var(--veryPeri);
+  height: 0.5rem;
+  transition: 0.2s;
+}
+.projects ol li a:hover:before {
+  height: 1rem;
+  bottom: 0;
+  z-index: -1;
+  transform: skewX(-25deg);
+}
+
 /*# sourceMappingURL=style.css.map */
