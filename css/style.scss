@@ -20,11 +20,11 @@ li {
   list-style: none;
 }
 body {
-	background: var(--cloudDancer);
+  background: var(--cloudDancer);
 }
 section:not(:first-child) {
-	padding: 3rem;
-	border-top: .5rem solid var(--veryPeri);
+  padding: 3rem;
+  border-top: 0.5rem solid var(--veryPeri);
 }
 .container {
   max-width: 1440px;
@@ -33,11 +33,11 @@ section:not(:first-child) {
   padding: 0 5rem;
 }
 .header {
-	position: fixed;
-	width: 100%;
+  position: fixed;
+  width: 100%;
   background: var(--veryPeri);
   padding: 24px 0;
-	z-index: 100;
+  z-index: 100;
   &__nav {
     height: 100%;
   }
@@ -64,86 +64,104 @@ section:not(:first-child) {
   }
 }
 .heading {
-	font: 700 5rem/1 "Playfair Display", serif;
+  font: 700 5rem/1 "Playfair Display", serif;
 }
 .title {
-	font: 200 3rem/1 "Source Sans Pro", sans-serif;
-	margin-bottom: 2rem;
+  font: 200 3rem/1 "Source Sans Pro", sans-serif;
+  margin-bottom: 2rem;
 }
 .text {
-	font: 300 2rem/1 "Source Sans Pro", sans-serif;
+  font: 300 2rem/1 "Source Sans Pro", sans-serif;
 }
 main {
-	position: relative;
-	top: 200px;
+  position: relative;
+  top: 200px;
 }
 .profile {
-	margin-bottom: 5rem;
+  margin-bottom: 5rem;
   &__info {
-		display: flex;
+    display: flex;
   }
   &__media {
-		flex: 1 1 20%;
+    flex: 1 1 20%;
     max-width: 300px;
     max-height: 300px;
-		margin-right: 2rem;
+    margin-right: 2rem;
     border-radius: 50%;
-		overflow: hidden;
-
+    overflow: hidden;
   }
   &__avatar {
     width: 600px;
     height: 600px;
     object-fit: cover;
-		object-position: -270px -170px;
+    object-position: -270px -170px;
   }
   &__content {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		flex: 2 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 2 1 40%;
   }
   &__contacts {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		flex: 1 1 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1 1 20%;
   }
   &__contacts-item {
-		margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
   &__contacts-link {
-		display: flex;
-		align-items: center;
-		font: 500 1rem/1 "Source Sans Pro", sans-serif;
-		color: var(--anthracite);
-		svg{
-			fill: var(--veryPeri);
-			margin-right: .5rem;
-		}
+    display: flex;
+    align-items: center;
+    font: 500 1rem/1 "Source Sans Pro", sans-serif;
+    color: var(--anthracite);
+    svg {
+      fill: var(--veryPeri);
+      margin-right: 0.5rem;
+    }
   }
 }
 .summary {
-	// background: var(--anthracite);
-	.summary__content {
-
-	}
+  // background: var(--anthracite);
+  .summary__content {
+  }
 }
 .skills {
 }
 .skills__list {
 }
 .skills__item {
-	display: flex;
-	align-items: center;
-	margin-bottom: 1rem;
-	p {
-		display: flex;
-		align-items: center;
-	}
-	img{
-		width: 3rem;
-		height: 3rem;
-		margin-right: 2rem;
-	}
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  p {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+  }
+}
+.code {
+  p {
+    margin-bottom: 1.5rem;
+  }
+  &__content {
+    background: var(--volcanicGlass);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    color: var(--cloudDancer);
+  }
+}
+.education {
+  display: flex;
+  &__content {
+    flex: 2 1 70%;
+  }
+  &__courses {
+    flex: 1 1 30%;
+  }
 }

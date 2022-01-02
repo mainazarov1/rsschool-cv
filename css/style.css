@@ -150,4 +150,24 @@ main {
   margin-right: 2rem;
 }
 
+.code p {
+  margin-bottom: 1.5rem;
+}
+.code__content {
+  background: var(--volcanicGlass);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: var(--cloudDancer);
+}
+
+.education {
+  display: flex;
+}
+.education__content {
+  flex: 2 1 70%;
+}
+.education__courses {
+  flex: 1 1 30%;
+}
+
 /*# sourceMappingURL=style.css.map */
