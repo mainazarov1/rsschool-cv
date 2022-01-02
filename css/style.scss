@@ -74,11 +74,10 @@ section:not(:first-child) {
   font: 300 2rem/1 "Source Sans Pro", sans-serif;
 }
 main {
-  position: relative;
-  top: 200px;
 }
 .profile {
   margin-bottom: 5rem;
+	padding-top: 10rem;
   &__info {
     display: flex;
   }
@@ -101,6 +100,9 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     flex: 2 1 40%;
+		.title {
+			margin-bottom: 0;
+		}
   }
   &__contacts {
     display: flex;
@@ -154,6 +156,9 @@ main {
     border-radius: 0.5rem;
     padding: 1rem 2rem;
     color: var(--cloudDancer);
+		code {
+			font: 500 1.5rem/1 monospace;
+		}
   }
 }
 .education {
@@ -194,4 +199,38 @@ main {
 			}
     }
   }
+}
+.footer {
+	background: var(--veryPeri);
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 0;
+		li:first-child {
+			flex: 0 0 15%;
+		}
+		li:nth-child(2) {
+			flex: 1 0 50%;
+			display: flex;
+			justify-content: center;
+		}
+		li:last-child {
+			flex: 0 0 15%;
+			display: flex;
+			justify-content: flex-end;
+		}
+		img {
+			height: 3rem;
+		}
+		p {
+			flex: 0 0 15%;
+			margin-left: auto;
+			font-weight: 500;
+		}
+	}
+	&__rsschool {
+	}
+	&__github {
+	}
 }

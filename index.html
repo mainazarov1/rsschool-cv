@@ -33,7 +33,6 @@
 			</nav>
 		</div>
 	</header>
-
 	<main>
 		<div class="container">
 			<section class="profile" id="profile">
@@ -88,8 +87,6 @@
 				<div class="summary__content">
 					<h2 class="title">About</h2>
 					<p class="text">I have good interpersonal skills, am an excellent team worker and very willing to learn and
-						develop new skills.<br>
-						I have good interpersonal skills, am an excellent team worker and very willing to learn and
 						develop new skills.</p>
 				</div>
 			</section>
@@ -143,11 +140,11 @@
 				<p class="text">Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.</p>
 				<pre class="code__content">
 					<code>
-	const moveZeros = (arr) => {
-	return arr.filter(x => x !== 0).concat(arr.filter(x => x === 0));
-	}
-	
-	moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
+const moveZeros = (arr) => {
+return arr.filter(x => x !== 0).concat(arr.filter(x => x === 0));
+}
+
+moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
 					</code>
 				</pre>
 			</section>
@@ -156,14 +153,17 @@
 					<h2 class="title">Education</h2>
 					<ul>
 						<li><p class="text">Kyrgyz National University.</p></li>
+						<br>
 						<li><p class="text">College at the Kyrgyz National University.</p></li>
 					</ul>
 				</div>
 				<div class="education__courses">
 					<h2 class="title">Courses</h2>
 					<ul>
-						<li><p class="text">Neolabs.</p></li>
 						<li><p class="text">Neobis.</p></li>
+						<li><p class="text">RSSchool.</p></li>
+						<li><p class="text">Neolabs.</p></li>
+						<li><p class="text">FreeCodeCamp.</p></li>
 					</ul>
 				</div>
 			</section>
@@ -178,6 +178,21 @@
 			</section>
 		</div>
 	</main>
+	<footer class="footer">
+		<div class="container">
+			<ul class="footer__wrap">
+				<li>
+					<a href="https://rs.school/js/" class="footer__rsschool"><img src="./assets/icons/rs_school_js.svg" alt=""></a>
+				</li>
+				<li>
+					<a href="https://github.com/mainazarov1" class="footer__github"><img src="./assets/icons/github-icon.svg" alt=""></a>
+				</li>
+				<li>
+					<p class="text">2022</p>
+				</li>
+			</ul>
+		</div>
+	</footer>
 </body>
 
 </html>
