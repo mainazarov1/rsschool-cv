@@ -71,4 +71,68 @@ section:not(:first-child) {
   border-bottom: 0.4rem solid var(--cloudDancer);
 }
 
+.heading {
+  font: 700 5rem/1 "Playfair Display", serif;
+}
+
+.title {
+  font: 200 3rem/1 "Source Sans Pro", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font: 300 2rem/1 "Source Sans Pro", sans-serif;
+}
+
+main {
+  position: relative;
+  top: 200px;
+}
+
+.profile {
+  margin-bottom: 5rem;
+}
+.profile__info {
+  display: flex;
+}
+.profile__media {
+  flex: 1 1 20%;
+  max-width: 300px;
+  max-height: 300px;
+  margin-right: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile__avatar {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  object-position: -270px -170px;
+}
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 2 1 40%;
+}
+.profile__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1 1 20%;
+}
+.profile__contacts-item {
+  margin-bottom: 1rem;
+}
+.profile__contacts-link {
+  display: flex;
+  align-items: center;
+  font: 500 1rem/1 "Source Sans Pro", sans-serif;
+  color: var(--anthracite);
+}
+.profile__contacts-link svg {
+  fill: var(--veryPeri);
+  margin-right: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
