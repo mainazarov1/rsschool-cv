@@ -23,6 +23,15 @@ li {
   list-style: none;
 }
 
+body {
+  background: var(--cloudDancer);
+}
+
+section:not(:first-child) {
+  padding: 3rem;
+  border-top: 0.5rem solid var(--veryPeri);
+}
+
 .container {
   max-width: 1440px;
   height: 100%;
@@ -31,8 +40,11 @@ li {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   background: var(--veryPeri);
   padding: 24px 0;
+  z-index: 100;
 }
 .header__nav {
   height: 100%;
