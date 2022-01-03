@@ -11,6 +11,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Mainazarov CV RSS</title>
 </head>
@@ -20,12 +21,11 @@
 		<div class="container">
 			<nav class="header__nav">
 				<ul class="header__list">
-					<li class="header__item"><a href="#main" class="header__link">Main</a></li>
+					<li class="header__item"><a href="#profile" class="header__link">Main</a></li>
 					<li class="header__item"><a href="#contacts" class="header__link">Contacts</a></li>
 					<li class="header__item"><a href="#summary" class="header__link">Summary</a></li>
 					<li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
 					<li class="header__item"><a href="#code" class="header__link">Code</a></li>
-					<li class="header__item"><a href="#courses" class="header__link">Courses</a></li>
 					<li class="header__item"><a href="#projects" class="header__link">Projects</a></li>
 					<li class="header__item"><a href="#education" class="header__link">Education</a></li>
 					<li class="header__item"><a href="#languages" class="header__link">Languages</a></li>
@@ -34,8 +34,8 @@
 		</div>
 	</header>
 	<main>
-		<div class="container">
-			<section class="profile" id="profile">
+		<section class="profile" id="profile">
+			<div class="container">
 				<div class="profile__info">
 					<div class="profile__media">
 						<img src="./assets/img/photo.jpeg" alt="Avatar" class="profile__avatar">
@@ -44,24 +44,34 @@
 						<h1 class="heading">Islambek Mainazarov</h1>
 						<h2 class="title">Front-end Developer</h2>
 					</div>
-					<ul class="profile__contacts">
-						<li class="profile__contacts-item"><a href="" class="profile__contacts-link"><svg
-									xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+					<ul class="profile__contacts" id="contacts">
+						<li class="profile__contacts-item">
+							<a href="https://www.google.ru/maps/place/%D0%91%D0%B8%D1%88%D0%BA%D0%B5%D0%BA/@42.8769795,74.521821,12z/data=!3m1!4b1!4m5!3m4!1s0x389eb7dc91b3c881:0x492ebaf57cdee27d!8m2!3d42.8746212!4d74.5697617"
+								class="profile__contacts-link">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
 									<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-								</svg>Bishkek, Kyrgyz Republic</a></li>
-						<li class="profile__contacts-item"><a href="" class="profile__contacts-link"><svg
-									xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								</svg>Bishkek, Kyrgyz Republic
+							</a>
+						</li>
+						<li class="profile__contacts-item">
+							<a href="tel:+996707073306" class="profile__contacts-link">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-telephone-fill" viewBox="0 0 16 16">
 									<path fill-rule="evenodd"
 										d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-								</svg>+996 707 07-33-06</a></li>
-						<li class="profile__contacts-item"><a href="" class="profile__contacts-link"><svg
-									xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								</svg>+996 707 07-33-06
+							</a>
+						</li>
+						<li class="profile__contacts-item">
+							<a href="mailto:mainazarov1@gmail.com" class="profile__contacts-link">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-envelope-fill" viewBox="0 0 16 16">
 									<path
 										d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-								</svg>mainazarov1@gmail.com</a></li>
+								</svg>mainazarov1@gmail.com
+							</a>
+						</li>
 						<li class="profile__contacts-item"><a href="" class="profile__contacts-link"><svg
 									xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord"
 									viewBox="0 0 16 16">
@@ -82,15 +92,19 @@
 								</svg>LinkedIn</a></li>
 					</ul>
 				</div>
-			</section>
-			<section class="summary">
+			</div>
+		</section>
+		<section class="summary" id="summary">
+			<div class="container">
 				<div class="summary__content">
 					<h2 class="title">About</h2>
 					<p class="text">I have good interpersonal skills, am an excellent team worker and very willing to learn and
 						develop new skills.</p>
 				</div>
-			</section>
-			<section class="skills">
+			</div>
+		</section>
+		<section class="skills" id="skills">
+			<div class="container">
 				<div class="title">Skills</div>
 				<ul class="skills__list">
 					<li class="skills__item">
@@ -134,58 +148,84 @@
 						<img src="./assets/icons/svg.svg" alt="Figma">
 					</li>
 				</ul>
-			</section>
-			<section class="code">
+			</div>
+		</section>
+		<section class="code" id="code">
+			<div class="container">
 				<h2 class="title">Code</h2>
-				<p class="text">Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.</p>
+				<p class="text">Write an algorithm that takes an array and moves all of the zeros to the end, preserving the
+					order of the other elements.</p>
 				<pre class="code__content">
-					<code>
-const moveZeros = (arr) => {
-return arr.filter(x => x !== 0).concat(arr.filter(x => x === 0));
+<code class="hljs">
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">moveZeros</span> = (<span class="hljs-variable">arr</span>) <span class="hljs-keyword">=></span> {
+  <span class="hljs-keyword">return</span> <span class="hljs-variable">arr</span>
+    .<span class="hljs-title function_">filter</span>(x <span class="hljs-keyword">=></span> x <span class="hljs-literal">!==</span> <span class="hljs-number">0</span>)
+    .<span class="hljs-title function_">concat</span>(<span class="hljs-variable">arr</span>.<span class="hljs-title function_">filter</span>(x <span class="hljs-keyword">=></span> x <span class="hljs-literal">===</span> <span class="hljs-number">0</span>));
 }
 
-moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
-					</code>
-				</pre>
-			</section>
-			<section class="education">
-				<div class="education__content">
-					<h2 class="title">Education</h2>
-					<ul>
-						<li><p class="text">Kyrgyz National University.</p></li>
-						<br>
-						<li><p class="text">College at the Kyrgyz National University.</p></li>
-					</ul>
+<span class="hljs-title function_">moveZeros</span>([<span class="hljs-keyword">false</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-string">"a"</span>])
+<span class="hljs-comment">// returns[false,1,1,2,1,3,"a",0,0]</span>
+</code>
+					</pre>
+			</div>
+		</section>
+		<section class="education" id="education">
+			<div class="container">
+				<div class="education__wrap">
+					<div class="education__content">
+						<h2 class="title">Education</h2>
+						<ul>
+							<li>
+								<p class="text">Kyrgyz National University.</p>
+							</li>
+							<br>
+							<li>
+								<p class="text">College at the Kyrgyz National University.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="education__courses">
+						<h2 class="title">Courses</h2>
+						<ul>
+							<li>
+								<p class="text">Neobis.</p>
+							</li>
+							<li>
+								<p class="text">RSSchool.</p>
+							</li>
+							<li>
+								<p class="text">Neolabs.</p>
+							</li>
+							<li>
+								<p class="text">FreeCodeCamp.</p>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="education__courses">
-					<h2 class="title">Courses</h2>
-					<ul>
-						<li><p class="text">Neobis.</p></li>
-						<li><p class="text">RSSchool.</p></li>
-						<li><p class="text">Neolabs.</p></li>
-						<li><p class="text">FreeCodeCamp.</p></li>
-					</ul>
-				</div>
-			</section>
-			<section class="projects">
+			</div>
+		</section>
+		<section class="projects" id="projects">
+			<div class="container">
 				<h2 class="title">Projects</h2>
-				<ol>
+				<ul>
 					<li><a class="text" href="https://mainazarov1.github.io/trans-light/">Trans-Light</a></li>
 					<li><a class="text" href="https://mainazarov1.github.io/404_Not_Found/">404 Not Found</a></li>
 					<li><a class="text" href="https://mainazarov1.github.io/bitcoin-landing-page/">BitCoin</a></li>
 					<li><a class="text" href="https://mainazarov1.github.io/IQ-Landing/">iQ</a></li>
-				</ol>
-			</section>
-		</div>
+				</ul>
+			</div>
+		</section>
 	</main>
 	<footer class="footer">
 		<div class="container">
 			<ul class="footer__wrap">
 				<li>
-					<a href="https://rs.school/js/" class="footer__rsschool"><img src="./assets/icons/rs_school_js.svg" alt=""></a>
+					<a href="https://rs.school/js/" class="footer__rsschool"><img src="./assets/icons/rs_school_js.svg"
+							alt=""></a>
 				</li>
 				<li>
-					<a href="https://github.com/mainazarov1" class="footer__github"><img src="./assets/icons/github-icon.svg" alt=""></a>
+					<a href="https://github.com/mainazarov1" class="footer__github"><img src="./assets/icons/github-icon.svg"
+							alt=""></a>
 				</li>
 				<li>
 					<p class="text">2022</p>
@@ -194,5 +234,5 @@ moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
 		</div>
 	</footer>
 </body>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 </html>
