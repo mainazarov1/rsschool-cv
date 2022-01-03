@@ -15,6 +15,12 @@
 a {
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  a {
+    text-decoration: 1px solid var(--veryPeri);
+    text-decoration-line: underline;
+  }
+}
 
 ul,
 ol,
@@ -166,6 +172,11 @@ section:nth-child(odd) {
   font: 600 2rem/1 monospace;
   color: var(--veryPeri);
 }
+@media (max-width: 500px) {
+  .title::before, .title::after {
+    font-size: 1.5rem;
+  }
+}
 .title::before {
   content: "< ";
   margin-left: -1.5rem;
@@ -263,11 +274,18 @@ section:nth-child(odd) {
   font: 500 1rem/1 "Source Sans Pro", sans-serif;
   color: var(--anthracite);
 }
+.profile__contacts-link:hover {
+  text-decoration: underline;
+}
 .profile__contacts-link svg {
   fill: var(--veryPeri);
   margin-right: 0.5rem;
 }
 
+.skills__list {
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 768px) {
   .skills__list {
     display: flex;
@@ -278,8 +296,12 @@ section:nth-child(odd) {
 .skills__item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .skills__item {
+    justify-content: center;
+  }
 }
 .skills__item p {
   display: flex;
@@ -289,6 +311,11 @@ section:nth-child(odd) {
   width: 3rem;
   height: 3rem;
   margin-right: 2rem;
+}
+@media (max-width: 768px) {
+  .skills__item img {
+    margin: 1rem;
+  }
 }
 
 .code p {
@@ -329,6 +356,17 @@ section:nth-child(odd) {
 }
 .education__courses {
   flex: 1 1 30%;
+}
+
+.languages__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .languages__list {
+    flex-direction: column;
+  }
 }
 
 .projects ul {
