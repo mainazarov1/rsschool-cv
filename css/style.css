@@ -321,6 +321,9 @@ section:nth-child(odd) {
 .code p {
   margin-bottom: 1.5rem;
 }
+.code__content {
+  display: contents;
+}
 .code code {
   color: var(--cloudDancer);
   border-radius: 0.5rem;

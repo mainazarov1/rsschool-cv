@@ -166,13 +166,13 @@
 					order of the other elements.</p>
 				<pre class="code__content">
 <code class="hljs">
-<span class="hljs-keyword">const</span> <span class="hljs-title function_">moveZeros</span> = (<span class="hljs-variable">arr</span>) <span class="hljs-keyword">=></span> {
+<span class="hljs-keyword">const</span> <span class="hljs-title function">moveZeros</span> = (<span class="hljs-variable">arr</span>) <span class="hljs-keyword">=></span> {
   <span class="hljs-keyword">return</span> <span class="hljs-variable">arr</span>
-    .<span class="hljs-title function_">filter</span>(x <span class="hljs-keyword">=></span> x <span class="hljs-literal">!==</span> <span class="hljs-number">0</span>)
-    .<span class="hljs-title function_">concat</span>(<span class="hljs-variable">arr</span>.<span class="hljs-title function_">filter</span>(x <span class="hljs-keyword">=></span> x <span class="hljs-literal">===</span> <span class="hljs-number">0</span>));
+    .<span class="hljs-title function">filter</span>(x <span class="hljs-keyword">=></span> x <span class="hljs-literal">!==</span> <span class="hljs-number">0</span>)
+    .<span class="hljs-title function">concat</span>(<span class="hljs-variable">arr</span>.<span class="hljs-title function">filter</span>(x <span class="hljs-keyword">=></span> x <span class="hljs-literal">===</span> <span class="hljs-number">0</span>));
 }
 
-<span class="hljs-title function_">moveZeros</span>([<span class="hljs-keyword">false</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-string">"a"</span>])
+<span class="hljs-title function">moveZeros</span>([<span class="hljs-keyword">false</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-string">"a"</span>])
 <span class="hljs-comment">// returns[false,1,1,2,1,3,"a",0,0]</span>
 </code>
 					</pre>

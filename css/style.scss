@@ -261,6 +261,9 @@ section:nth-child(odd) {
   p {
     margin-bottom: 1.5rem;
   }
+	&__content {
+		display: contents;
+	}
   code {
     color: var(--cloudDancer);
     border-radius: 0.5rem;
